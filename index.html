@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!--nav bar-->
+    <div class="nav-bar">
+        <!--nav bar content-->
+        <div class="nav-bar-content">
+            <div class="nav-bar-logo"><img src="./fontLogo.png" alt="font logo bank a"></div>
+            <!--nav center-->
+            <div class="nav-center">
+                <a href="#bank">БАНК</a>
+                <a href="#bank">БИЗНЕС</a>
+                <a href="#bank">ИНВЕСТИЦИИ</a>
+                <a href="#bank">ИНВЕСТИЦИИ</a>
+                <a href="#bank">ИНВЕСТИЦИИ</a>
+                <a href="#bank">ИНВЕСТИЦИИ</a>
+                <a href="#bank">ИНВЕСТИЦИИ</a>
+            </div>
+            <!--nav center end-->
+            <!--login button-->
+            <div class="login-btn">Log in</div>
+            <!--login button end-->
+        </div>
+    </div>
+    <!--nav bar end-->
+    <!--main content-->
+    <form>
+        <main id="main-content">
+            <h1>Конвертер валют онлайн</h1>
+            <!--section 1-->
+            <!-- wrapper div-->
+            <div class="wrapper">
+                <section class="left-section">
+                    <p>У меня есть </p>
+                    <!--currency container-->
+                    <div class="currency base">
+                        <button class="active">RUB</button>
+                        <button>USD</button>
+                        <button>AZN</button>
+                        <button>EUR</button>
+                    </div>
+                    <!--currency container end-->
+                    <input type="text" name="amount" id="base" class="calculator" value="5000">
+                    <div class="unit-amount">
+                        <p>1 RUB = 0.0135USD</p>
+                    </div>
+
+
+                </section>
+                <!--section 1 end-->
+                <!--section 2-->
+                <section class="right">
+                    <p>Хочу приобрести</p>
+                    <!--currency container-->
+                    <div class="currency">
+                        <button>RUB</button>
+                        <button class="active">USD</button>
+                        <button>AZN</button>
+                        <button>EUR</button>
+                    </div>
+                    <!--currency container end-->
+                    <input type="text" name="amount" id="symbol" class="calculator disabled-right">
+                    <div class="unit-amount">
+                        <p>1 USD = 0.0135RUB</p>
+                    </div>
+
+                </section>
+                <!--section 2 end-->
+            </div>
+            <!--wrapper div end-->
+        </main>
+        <!--main content end-->
+    </form>
+
+
+    <!--***********JavaScript**********-->
+    <script type="text/javascript" src="./index.js"></script>
+    <!--**********JavaScript end********-->
+</body>
+
+</html>

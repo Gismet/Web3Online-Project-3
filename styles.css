@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+===============
+    NAV BAR
+===============
+*/
+.nav-bar {
+    width: 100%;
+    background-color: #F5F5F6;
+}
+
+.nav-bar-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.nav-bar-logo {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.nav-center {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-center a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.login-btn {
+    width: 60px;
+    height: 35px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto 4px;
+    float: right;
+}
+
+/*
+===============
+  MAIN CONTENT
+===============
+*/
+#main-content {
+    width: 54%;
+    /* background-color: wheat; */
+    margin: 0 auto;
+}
+
+.currency {
+    width: 300px;
+    /* background-color: yellow; */
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* currency buttons */
+.currency button {
+    flex-grow: 1;
+    border: 1px solid rgba(127, 127, 127, 0.5);
+    border-collapse: collapse;
+    padding: 5px 15px;
+    color: #C6C6C6;
+}
+
+.currency button:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.currency button:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* input area */
+.calculator {
+    display: inline-block;
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    border: 1px solid rgba(127, 127, 127, 0.5);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: none;
+    outline: none;
+    line-height: 42px;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+/* unit amount */
+.unit-amount {
+    width: 300px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    border: 1px solid rgba(127, 127, 127, 0.5);
+    border-top: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.disabled-right {
+    background-color: white;
+}
+
+/* section */
+section {
+    margin-top: 60px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+#main-content h1 {
+    margin-top: 55px;
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+}
+
+.right {
+    margin-left: 280px;
+}
+
+.active {
+    background-color: #833AE0;
+}
